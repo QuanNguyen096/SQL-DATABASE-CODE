@@ -123,3 +123,6 @@ exec sp_bindrule 'ngaynhap','sinhvien.ngaysinh'
 --5. Ràng buộc sinh viên có tuổi <=35
 alter table sinhvien
     add check( ((getdate()) - (ngaysinh)) <= 35 );
+
+--6.
+UPDATE NHANVIEN SET NGAYVAOLAM ='05/09/2020'
