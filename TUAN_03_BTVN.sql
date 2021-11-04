@@ -124,5 +124,8 @@ exec sp_bindrule 'ngaynhap','sinhvien.ngaysinh'
 alter table sinhvien
     add check( ((getdate()) - (ngaysinh)) <= 35 );
 
---6.
-UPDATE NHANVIEN SET NGAYVAOLAM ='05/09/2020'
+--6. Thêm cột ngày nhập học vào bảng sinh viên và cho giá trị mặc định là ‘5/9/2020’
+ALTER TABLE SINHVIEN
+ADD ngaynhaphoc date NOT NULL
+ALTER TABLE SINHVIEN
+ADD DEFAULT '05/09/2020' FOR ngaynhaphoc
