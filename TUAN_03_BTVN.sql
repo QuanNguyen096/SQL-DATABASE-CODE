@@ -1,4 +1,4 @@
-﻿create database [QUANLYGD] on primary
+﻿create database [QUANLYSV] on primary
 (
     name = QuanLy_mdf,
     filename='D:\0306201461_tuan_3\QuanLy_mdf.mdf',
